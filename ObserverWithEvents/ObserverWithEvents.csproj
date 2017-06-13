@@ -42,12 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Observer\Interfaces\ISubscriber.cs" />
-    <Compile Include="Observer\Moderator.cs" />
-    <Compile Include="Observer\User.cs" />
+    <Compile Include="2-SubjectWithoutEvents\Interfaces\IChannel.cs" />
+    <Compile Include="3-ObserverWithEvents\Interfaces\IObserverEvents.cs" />
+    <Compile Include="3-ObserverWithEvents\ObserverEvents.cs" />
+    <Compile Include="1-ObserverWithoutEvents\Interfaces\ISubscriber.cs" />
+    <Compile Include="1-ObserverWithoutEvents\Moderator.cs" />
+    <Compile Include="1-ObserverWithoutEvents\User.cs" />
+    <Compile Include="4-SubjectWithEvents\Interfaces\IChannelEvents.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Subject\Channel.cs" />
+    <Compile Include="4-SubjectWithEvents\ChannelEvents.cs" />
+    <Compile Include="2-SubjectWithoutEvents\Channel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

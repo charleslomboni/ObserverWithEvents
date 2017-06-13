@@ -1,4 +1,4 @@
-﻿namespace ObserverWithEvents.Observer.Interfaces {
+﻿namespace ObserverWithEvents.Interfaces {
 
     /// <summary>
     /// Interface for all classes that need be a subscriber to action

@@ -1,12 +1,13 @@
-﻿using ObserverWithEvents.Observer.Interfaces;
+﻿using ObserverWithEvents.Interfaces;
+using System;
 using System.Collections.Generic;
 
-namespace ObserverWithEvents.Subject {
+namespace ObserverWithEvents {
 
     /// <summary>
     /// The publisher class
     /// </summary>
-    public class Channel {
+    public class Channel : IChannel {
 
         /// <summary>
         /// List of observers
@@ -19,6 +20,7 @@ namespace ObserverWithEvents.Subject {
         /// <param name="subscriber"></param>
         public void Subscribe(ISubscriber subscriber) {
             _subscribersList.Add(subscriber);
+            Console.WriteLine("Subscribe event...");
         }
 
         /// <summary>
@@ -27,6 +29,7 @@ namespace ObserverWithEvents.Subject {
         /// <param name="subscriber"></param>
         public void Unsubscribe(ISubscriber subscriber) {
             _subscribersList.Remove(subscriber);
+            Console.WriteLine("Unsubscribe event...");
         }
 
         /// <summary>

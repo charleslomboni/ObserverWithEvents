@@ -1,7 +1,7 @@
-﻿using ObserverWithEvents.Observer.Interfaces;
+﻿using ObserverWithEvents.Interfaces;
 using System;
 
-namespace ObserverWithEvents.Observer {
+namespace ObserverWithEvents {
 
     /// <summary>
     /// Moderator is a subscriber from the channel
