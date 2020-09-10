@@ -21,27 +21,27 @@ namespace ObserverWithEvents {
             IChannelEvents channel = new ChannelEvents();
 
             // Create os subscribers/observers
-            IObserverEvents userCharles = new ObserverEvents(channel);
-            IObserverEvents userVictor = new ObserverEvents(channel);
-            IObserverEvents userLomboni = new ObserverEvents(channel);
-            IObserverEvents userTrindade = new ObserverEvents(channel);
-            IObserverEvents moderatorPereira = new ObserverEvents(channel);
+            IObserverEvents userCharles0 = new ObserverEvents(channel);
+            IObserverEvents userCharles1 = new ObserverEvents(channel);
+            IObserverEvents userCharles2 = new ObserverEvents(channel);
+            IObserverEvents userCharles3 = new ObserverEvents(channel);
+            IObserverEvents moderator = new ObserverEvents(channel);
 
             // Sign to the channel
-            userCharles.Subscriber();
-            userVictor.Subscriber();
-            userLomboni.Subscriber();
-            userTrindade.Subscriber();
-            moderatorPereira.Subscriber();
+            userCharles0.Subscriber();
+            userCharles1.Subscriber();
+            userCharles2.Subscriber();
+            userCharles3.Subscriber();
+            moderator.Subscriber();
 
             // Notify everyone about something new
             channel.OnNotifySubscribers();
 
-            userCharles.Unsubscriber();
-            userVictor.Unsubscriber();
-            userLomboni.Unsubscriber();
-            userTrindade.Unsubscriber();
-            moderatorPereira.Unsubscriber();
+            userCharles0.Unsubscriber();
+            userCharles1.Unsubscriber();
+            userCharles2.Unsubscriber();
+            userCharles3.Unsubscriber();
+            userCharles4.Unsubscriber();
         }
 
         /// <summary>
@@ -52,28 +52,28 @@ namespace ObserverWithEvents {
             IChannel channel = new Channel();
 
             // Create os subscribers/observers
-            ISubscriber charles = new User();
-            ISubscriber victor = new User();
-            ISubscriber lomboni = new User();
-            ISubscriber trindade = new User();
-            ISubscriber pereira = new Moderator();
+            ISubscriber charles0 = new User();
+            ISubscriber charles1 = new User();
+            ISubscriber charles2 = new User();
+            ISubscriber charles3 = new User();
+            ISubscriber charles4 = new Moderator();
 
             // Sign to the channel
-            channel.Subscribe(charles);
-            channel.Subscribe(victor);
-            channel.Subscribe(lomboni);
-            channel.Subscribe(trindade);
-            channel.Subscribe(pereira);
+            channel.Subscribe(charles0);
+            channel.Subscribe(charles1);
+            channel.Subscribe(charles2);
+            channel.Subscribe(charles3);
+            channel.Subscribe(charles4);
 
             // Notify everyone about something new
             channel.NotifySubscribers();
 
             // Unsign to the channel
-            channel.Unsubscribe(charles);
-            channel.Unsubscribe(victor);
-            channel.Unsubscribe(lomboni);
-            channel.Unsubscribe(trindade);
-            channel.Unsubscribe(pereira);
+            channel.Unsubscribe(charles0);
+            channel.Unsubscribe(charles1);
+            channel.Unsubscribe(charles2);
+            channel.Unsubscribe(charles3);
+            channel.Unsubscribe(charles4);
         }
     }
 }
