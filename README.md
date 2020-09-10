@@ -33,7 +33,7 @@ private static void WithEvents() {
     userCharles1.Unsubscriber();
     userCharles2.Unsubscriber();
     userCharles3.Unsubscriber();
-    userCharles4.Unsubscriber();
+    moderator.Unsubscriber();
 }
 
 /// <summary>
